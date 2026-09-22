@@ -1,25 +1,21 @@
 body {
-  background-color: aqua;
   margin: 24px;
-  height: 100vh;
+  height: calc(100vh - 48px);
 }
 
 .bloc {
   background-color: yellow;
 }
 .grid {
+  height: 100%;
   gap: 24px;
   display: grid;
 }
 
 .grid-container {
   grid-template-columns: 1fr 2fr;
-  width: 100%;
 }
 
-.firstgrid {
-  width: 100%;
-}
 .secondgrid {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -27,4 +23,44 @@ body {
 
 .bloc3 {
   grid-row: span 3;
+  background-color: #80b918;
+}
+
+.fourthgrid {
+  grid-template-columns: 1fr 2fr 1fr;
+}
+.bloc9,
+.bloc10 {
+  grid-row: span 2;
+}
+
+.bloc1 {
+  background-color: #007f5f;
+}
+
+.bloc2 {
+  background-color: #2b9348;
+}
+
+.bloc4 {
+  background-color: #dddf00;
+}
+.bloc5 {
+  background-color: #eeef20;
+}
+.bloc6 {
+  background-color: #ffff3f;
+}
+.bloc7 {
+  background-color: #55a630;
+}
+.bloc8,
+.bloc11 {
+  background-color: #bfd200;
+}
+.bloc9 {
+  background-color: #d4d700;
+}
+.bloc10 {
+  background-color: #007f5f;
 }
