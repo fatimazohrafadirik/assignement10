@@ -1,0 +1,30 @@
+body {
+  background-color: aqua;
+  margin: 24px;
+  height: 100vh;
+}
+
+.bloc {
+  background-color: yellow;
+}
+.grid {
+  gap: 24px;
+  display: grid;
+}
+
+.grid-container {
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+}
+
+.firstgrid {
+  width: 100%;
+}
+.secondgrid {
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.bloc3 {
+  grid-row: span 3;
+}
